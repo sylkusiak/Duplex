@@ -1,8 +1,8 @@
 header {
- height: 265px;
- position: fixed;
- width: 100%;
- z-index: 2;
+  height: 265px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   background: linear-gradient(180deg, rgba(10, 19, 1, 0.95) 15.5%, rgba(10, 19, 1, 0) 82.98%);
 }
 
@@ -12,64 +12,69 @@ body {
 }
 
 .content {
- background-color: #706C4C;
- position: relative;
- padding-top: 2%;
- display: flex;
- justify-content: space-between;
- align-items: center;
+  background-color: #706C4C;
+  position: relative;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.landingsection {
+  position: relative;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.landingtext {
+  text-align: center;
+  padding: 8%;
+}
+
+@media (max-width: 768px) {
+  /* landing section on mobile */
+  .landingimg {
+    display: none
   }
-
-
-    .landingsection {
-    position: relative;
-    align-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
+  .landingsection {
+    height: 500px
   }
-
-    .landingtext {
-    text-align: center;
-    padding: 8%;
+  .logowhite {
+    padding-top: 10%;
+    width: 100%
   }
+}
 
-  .palmoverlay {
+.palmoverlay {
   position: absolute;
   left: 286px;
   top: 300px;
   mix-blend-mode: color-burn;
   opacity: 0.10;
-  }
 }
 
-
-  .logowhite {
-    width: 320px;
-    height: 58px;
-  }
-
-
-
 .circle {
-position: absolute;
-width: 300px;
-height: 300px;
-left: 700px;
-top: 600px;
-border: 1.9px dashed #F2B277;
-border-radius: 900px;
-z-index: 2;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 700px;
+  top: 600px;
+  border: 1.9px dashed #F2B277;
+  border-radius: 900px;
+  z-index: 2;
 }
 
 .circle2 {
-position: absolute;
-width: 300px;
-height: 300px;
-left: -240px;
-top: 1440px;
-border: 1.9px dashed #F2B277;
-border-radius: 900px;
-z-index: 2;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -240px;
+  top: 1440px;
+  border: 1.9px dashed #F2B277;
+  border-radius: 900px;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -80,14 +85,14 @@ z-index: 2;
 }
 
 .circle3 {
-position: absolute;
-width: 200px;
-height: 200px;
-left: 1150px;
-top: 2360px;
-border: 1.9px dashed #F2B277;
-border-radius: 900px;
-z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 1150px;
+  top: 2360px;
+  border: 1.9px dashed #F2B277;
+  border-radius: 900px;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -98,12 +103,12 @@ z-index: 2;
 }
 
 a {
-font-family: Alegreya Sans;
-font-style: italic;
-font-weight: 300;
-font-size: 30px;
-color: #F2B277;
-text-decoration: none;
+  font-family: Alegreya Sans;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 30px;
+  color: #F2B277;
+  text-decoration: none;
 }
 
 h2 {
@@ -126,14 +131,15 @@ h1 {
 
 .foodtext {
   padding: 18% 10% 18% 10%;
+  min-width: 300px
 }
 
 @media (min-width: 768px) {
   .foodcontent {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  padding: 15% 6% 15% 6%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    padding: 15% 6% 15% 6%;
   }
 
   .foodtext {
@@ -153,6 +159,7 @@ h1 {
   padding-left: 25%;
   padding-right: 25%;
   text-align: center;
+  min-width: 350px;
 }
 
 .palmoverlay2 {
@@ -197,7 +204,7 @@ h1 {
   font-size: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .brunchtext h1 {
     font-size: 45px;
     line-height: 60px;
@@ -211,4 +218,98 @@ h1 {
     padding-right: 4%;
     padding-top: 74%;
   }
+}
+
+
+
+/* testing */
+
+body {
+  /* font-family: "Lato", sans-serif; */
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .3s;
+  /* padding: 16px; */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.hamburgericon {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s linear;
+  color: white;
+  padding: 10px;
+  padding-left: 25px; 
+}
+
+
+/* transforming bar */
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* .change .bar2 {opacity: 0;} */
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
