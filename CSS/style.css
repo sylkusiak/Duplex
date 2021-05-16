@@ -154,7 +154,7 @@ body {
     background-position: right;
     opacity: .10;
     background-blend-mode: color-burn;
-    background-image:  url("../IMAGES/Palm-transparent-2.png");
+    background-image:  url("../IMAGES/Palm-background.png");
     /* background-size: cover; */
   }
 }
