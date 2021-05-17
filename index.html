@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title> The Duplex Chicago Website Landing Page </title>
   <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,56 +15,128 @@
   <section>
 
     <!-- Header Menu (Hamburger, Phone, Reserve) -->
-
     <header>
-      </header>
+      <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
+        <!-- &#9776; -->
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2" id="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </span>
+      <span class="headerlinks">
+        <span class="call">Call (123) 456-7890</span>
+        <span class="reserve">Reserve</span>
+        <span class="callicon">&#9742;</span>
+      </span>
+      <script>
+        // function openNav() {
+        //   document.getElementById("mySidenav").style.width = "250px";
+        //   document.getElementById("main").style.marginLeft = "250px";
+        //   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        //   // document.getElementById("hamburger").style.opacity = "0"
+        // }
+        
+        // function closeNav() {
+        //   document.getElementById("mySidenav").style.width = "0";
+        //   document.getElementById("main").style.marginLeft= "0";
+        //   document.body.style.backgroundColor = "white";
+        //   // document.getElementById("hamburger").style.opacity = "1"
+        // }
+
+        function myFunction(x) {
+          const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+          x.classList.toggle("change");
+          //open
+          if (document.getElementById("bar2").style.opacity !== "0") {
+            if (width > 768){
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            document.getElementById("bar2").style.opacity = 0
+          }
+          //close
+          else {
+            if (document.getElementById("main").style.marginLeft === "250px") {
+              document.getElementById("main").style.marginLeft= "0";
+            }
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+            document.getElementById("bar2").style.opacity = 1
+          }
+        }
+      </script>
+    </header>
 
     <!-- Landing Page (Logo, Image, About Blurb) -->
+    <div class="main" id="main">
+    <!-- <div class="circle"></div> -->
+    <div class="content-desktop">
+      <div class="landingsection">
+        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+        <div class="landingtext">
+          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+          </h2>
+          <a href="#">explore our menus </a>
+        </div>
+      </div>
+      <img class= "landingimg" src="IMAGES/LandingImage1.png" />
+      <!-- <div class="palmoverlay">
+        <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
+      </div> -->
+    </div>
 
-      <div class="circle">
+    <div class="content-mobile">
+      <div class="landingsection">
+        <!-- <img class= "landingimg" src="IMAGES/LandingImage1.png" /> -->
+        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+      </div>
+      <div class="landingtextcontainer">
+
+        <div class="landingtext">
+          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+          </h2>
+          <a href="#">explore our menus </a>
         </div>
-      <div class="content">
-          <div class="landingsection">
-              <img src="IMAGES/duplexlogowhite.svg" class="logowhite">
-          <div class="landingtext">
-            <h2>enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
-            </h2>
-            <a href="#">explore our menus </a>
-          </div>
-        </div>
-            <img src="IMAGES/LandingImage1.png">
-        <div class="palmoverlay">
-          <img src="IMAGES/palm.svg" width="660" height="450">
-          </div>
-        </div>
+      </div>
+      <!-- <div class="palmoverlay">
+        <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
+      </div> -->
+    </div>
 
       <!-- Food Section (Food Image + Reserve Table CTA) -->
       
-      <div class="circle2">
-        </div>
-        <div class="foodcontent">
-          <img src="IMAGES/duplexfoodphoto.JPG" width="593" height="395">
-          <div class="foodtext">
+    <!-- <div class="circle2"></div> -->
+    <div class="foodcontent">
+        <img class="foodimg" src="IMAGES/duplexfoodphoto.JPG" />
+        <div class="foodtext">
           <h1> Good vibes and great cocktails. It all adds up. </h1>
           <a href="#">reserve a table</a>
-          </div>
         </div>
+    </div>
 
       <!-- Events Section on Landing -->
 
       <div class="eventscontent">
-        <img src="IMAGES/barshot.png">
+        <img class="barshot" src="IMAGES/barshot.png">
         <div class="eventtext">
-        <h1 style="color: #FFFDF5"> Live music and local DJs. It’s all about the community. </h1>
-        <a href="#">upcoming events</a>
+          <h1 style="color: #FFFDF5"> Live music and local DJs. It’s all about the community. </h1>
+          <a href="#">upcoming events</a>
         </div>
         <div class="palmoverlay2">
-          <img src="IMAGES/palm2.svg" width="95%" height="80%">
+          <img class="palmimg2" src="IMAGES/palm.svg">
           </div>
       </div>
 
-      <div class="circle3">
-        </div>
+      <!-- <div class="circle3"></div> -->
 
 
               <!-- Photo Collage Section and Hours -->
@@ -77,7 +150,7 @@
            <h2 style="color: #2B2E28"> Enjoy bottomless mimosas and margaritas. </h2>
          </div>
        </div>
-
   </section>
+  </div>
 </body>
 </html>
