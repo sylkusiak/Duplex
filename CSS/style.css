@@ -15,8 +15,8 @@ body {
   .headerlinks {
     float: right;
     color: white;
-    padding-right: 35px;
-    padding-top: 20px;
+    padding-right: 5%;
+    padding-top: 25px;
     font-family: Alegreya Sans;
     font-weight: 300;
     font-size: 20px;
@@ -24,14 +24,14 @@ body {
 
   .reserve{
     cursor: pointer;
-    margin-left: 60px; 
+    margin-left: 40px;
     border: 1px solid #F2B277;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 25px;
     padding-left: 25px;
   }
-  
+
   .reserve:hover {
     background-color: #F2B277;
     color: black
@@ -52,7 +52,7 @@ body {
   .reserve{
     display: none
   }
-  
+
   .call {
     display: none
   }
@@ -61,7 +61,7 @@ body {
     font-size: 35px;
     cursor: pointer;
   }
-  
+
 }
 
 
@@ -70,12 +70,11 @@ body {
   .content-desktop {
     background-color: #706C4C;
     position: relative;
-    padding-top: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
+    top: -90px;
   }
   .content-mobile {
     display: none
@@ -83,26 +82,29 @@ body {
 
   .landingsection {
     position: relative;
-    align-content: center;
     width: 60%;
+    padding-right: 7%;
   }
 
   .landingsection img {
     padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
+    padding-right: 40%;
+    width: 85%;
   }
 
   .landingimg {
+    padding-top: 8%;
     width: 40%;
   }
 
   .landingtext {
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
+    padding-top: 6%;
+    padding-left: 17%;
+    padding-right: 20%;
+    width: 70%;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -121,11 +123,11 @@ body {
   .landingsection {
     height: 500px;
     width: 100%;
-    background-image: url("../IMAGES/LandingImage1.png");
+    background-image: url("../IMAGES/DuplexLanding.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
-    
+    background-position: center center;
+
   }
 
   .landingimg{
@@ -137,8 +139,9 @@ body {
     z-index:1;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-right: 35%;
+    padding-right: 20%;
     padding-left: 5%;
+
     /* height: 500px */
   }
   .landingtext:before {
@@ -152,28 +155,23 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    opacity: .10;
-    background-blend-mode: color-burn;
-    background-image:  url("../IMAGES/Palm-background.png");
     /* background-size: cover; */
   }
 }
 
 @media (max-width: 768px) and (min-width: 520px) {
   .logowhite {
-    padding-top: 20%;
+    padding-top: 16%;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
   }
 }
 
 @media (max-width: 520px) {
   .logowhite {
-    padding-top: 45%;
+    padding-top: 16%;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
   }
 }
 
@@ -194,12 +192,12 @@ body {
 @media (min-width: 768px) {
   .palmoverlay {
     position: absolute;
-    left: 286px;
-    top: 300px;
+    left: 340px;
+    top: 380px;
     mix-blend-mode: color-burn;
     opacity: 0.10;
   }
-  
+
   .circle {
     position: absolute;
     width: 400px;
@@ -210,7 +208,7 @@ body {
     border-radius: 900px;
     z-index: 2;
   }
-  
+
   .circle2 {
     position: absolute;
     width: 400px;
@@ -254,7 +252,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   .circle {
     /* position: absolute; */
     width: 300px;
@@ -265,7 +263,7 @@ body {
     border-radius: 900px;
     z-index: 2;
   }
-  
+
   .circle2 {
     /* position: absolute; */
     /* width: 300px; */
@@ -339,16 +337,13 @@ h1 {
 
   .foodimg {
     width: 45%;
-    padding-right: 5%;
-    height: auto;
     float: left;
   }
 
   .foodtext {
-    width: 45%;
-    padding-left: 5%;
+    width: 40%;
     float: right;
-  /* padding: 6% 2% 6% 10%; */
+    padding: 6% 2% 6% 10%;
   }
 }
 
@@ -367,6 +362,7 @@ h1 {
     height: auto
   }
   .foodtext {
+    width: 70%;
     padding: 15% 2% 15% 10%;
   }
 }
@@ -469,11 +465,11 @@ h1 {
     opacity: 0.06;
     z-index: 2
   }
-  
+
   .palmimg2 {
     width: 100%;
     height: auto;
-  }  
+  }
 
   .barshot {
     width: 50%;
@@ -485,10 +481,10 @@ h1 {
   .palmoverlay2 {
     display: none
   }
-  
+
   .palmimg2 {
     display: none
-  }  
+  }
   .barshot {
     width: 100%;
     height: auto
@@ -535,7 +531,7 @@ h1 {
   position: absolute;
   padding-top: 75%;
   padding-left: 64%;
-  padding-right: 6%;
+  padding-right: 5%;
   text-align: right;
 }
 
@@ -551,7 +547,7 @@ h1 {
 
 @media (min-width: 768px) {
   .brunchtext h1 {
-    font-size: 45px;
+    font-size: 43px;
     line-height: 60px;
   }
 
@@ -560,7 +556,7 @@ h1 {
   }
 
   .brunchtext {
-    padding-right: 4%;
+    padding-right: 5%;
     padding-top: 74%;
   }
 }
@@ -573,20 +569,51 @@ h1 {
     padding-right: 3%;
     text-align: right;
   }
-  
+
   .brunchtext h1 {
     font-size: 20px;
     line-height: 30px;
   }
-  
+
   .brunchtext h2 {
     font-size: 19px;
   }
 }
 
+.newslettercontent {
+    position: relative;
+    background: #706C4C;
+    margin-top: 60%;
+    background-image: url("../IMAGES/signupbg.png")
+  }
+
+  .newslettercontent h2 {
+    font-size: 24px;
+  }
+
+.newslettertext {
+  width: 50%;
+  padding: 10% 25% 10% 25%;
+}
+
+/* Footer Section */
 
 
 
+.social-links {
+  display: block;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.social-links a {
+  color: white;
+}
+
+li {
+  display: inline-block;
+  padding: 2%;
+}
 
 /* testing */
 
@@ -600,29 +627,30 @@ body {
   width: 0;
   position: fixed;
   z-index: 3;
-  top: 0;
-  left: 0;
-  background-color: #111;
+  background-color: #FFFCF0;
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 60px;
+  padding-top: 90px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 5% 5% 10% 14%;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  color: #151210;
   display: block;
   transition: 0.3s;
+  font-family: Alegreya Sans;
+  font-weight: 300;
+  font-size: 40px;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+  background-color: #151210;
 }
 
 .sidenav .closebtn {
-  
+
   position: absolute;
   top: 0;
   right: 25px;
@@ -645,6 +673,7 @@ body {
   z-index: 3;
   transition: all 0.3s linear;
   color: white;
+  padding-left: 2%;
 }
 
 @media (max-width: 768px) {
@@ -675,6 +704,7 @@ body {
 }
 
 .change .bar1 {
+  background-color: #2D3425;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
@@ -682,5 +712,6 @@ body {
 /* .change .bar2 {opacity: 0;} */
 
 .change .bar3 {
+  background-color: #2D3425;
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
