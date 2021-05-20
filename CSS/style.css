@@ -95,6 +95,7 @@ body {
   .landingimg {
     padding-top: 8%;
     width: 40%;
+    z-index: 1;
   }
 
   .landingtext {
@@ -132,6 +133,7 @@ body {
 
   .landingimg{
     width: 100%;
+    z-index: 1;
   }
 
   .landingtext {
@@ -193,9 +195,15 @@ body {
   .palmoverlay {
     position: absolute;
     left: 340px;
-    top: 380px;
+    top: 220px;
     mix-blend-mode: color-burn;
     opacity: 0.10;
+  }
+
+  .palmimg {
+  width: 90%;
+  height: auto;
+  z-index: 0;
   }
 
   .circle {
@@ -232,21 +240,12 @@ body {
   }
 }
 
-@media (max-width: 768px) and (min-width: 500px) {
-  .palmoverlay {
-    position: absolute;
-    left: 266px;
-    top: 500px;
-    mix-blend-mode: color-burn;
-    opacity: 0.12;
-  }
-}
 
 @media (max-width: 500px) {
   .palmoverlay {
     position: absolute;
-    left: 180px;
-    top: 440px;
+    left: 91px;
+    top: 480px;
     mix-blend-mode: color-burn;
     opacity: 0.12;
   }
