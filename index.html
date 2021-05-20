@@ -20,11 +20,11 @@
       <div id="mySidenav" class="sidenav">
         <!-- <a href="javascript:void(0)" class="closebtn">&times;</a> -->
 
-          <a href="#">About</a>
-          <a href="#">Menu</a>
-          <a href="#">Reservations</a>
-          <a href="#">Contact</a>
-        </div>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Reservations</a>
+        <a href="#">Contact</a>
+      </div>
       <span style="font-size:30px;cursor:pointer" id="hamburger" class='hamburgericon'>
         <!-- &#9776; -->
         <div class="container" onclick="myFunction(this)">
@@ -39,20 +39,6 @@
         <span class="callicon">&#9742;</span>
       </span>
       <script>
-        // function openNav() {
-        //   document.getElementById("mySidenav").style.width = "250px";
-        //   document.getElementById("main").style.marginLeft = "250px";
-        //   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        //   // document.getElementById("hamburger").style.opacity = "0"
-        // }
-
-        // function closeNav() {
-        //   document.getElementById("mySidenav").style.width = "0";
-        //   document.getElementById("main").style.marginLeft= "0";
-        //   document.body.style.backgroundColor = "white";
-        //   // document.getElementById("hamburger").style.opacity = "1"
-        // }
-
         function myFunction(x) {
           const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
           x.classList.toggle("change");
@@ -81,53 +67,52 @@
     <!-- Landing Page (Logo, Image, About Blurb) -->
     <div class="main" id="main">
     <!-- <div class="circle"></div> -->
-    <div class="content-desktop">
-      <div class="landingsection">
-        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
-        <div class="landingtext">
-          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
-          </h2>
-          <a href="#">explore our menus </a>
+      <div class="content-desktop">
+        <div class="landingsection">
+          <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+          <div class="landingtext">
+            <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+            </h2>
+            <a href="#">explore our menus </a>
+          </div>
+        </div>
+        <img class= "landingimg" src="IMAGES/DuplexLanding.jpg" />
+        <div class="palmoverlay">
+          <img class="palmimg" src="IMAGES/palm.svg" width="630" height="380">
         </div>
       </div>
-      <img class= "landingimg" src="IMAGES/DuplexLanding.jpg" />
-      <div class="palmoverlay">
-        <img class="palmimg" src="IMAGES/palm.svg" width="630" height="380">
-      </div>
-    </div>
 
-    <div class="content-mobile">
+      <div class="content-mobile">
+        <div class="landingsection">
+          <!-- <div class="palmoverlay">
+            <img class="palmimg" src="IMAGES/palm.svg" width="410" height="375">
+          </div> -->
+          <!-- <img class= "landingimg" src="IMAGES/LandingImage1.png" /> -->
+          <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
+        </div>
+        <div class="landingtextcontainer">
 
-      <div class="landingsection">
+          <div class="landingtext">
+            <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
+            </h2>
+            <a href="#">explore our menus </a>
+          </div>
+        </div>
         <!-- <div class="palmoverlay">
-          <img class="palmimg" src="IMAGES/palm.svg" width="410" height="375">
+          <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
         </div> -->
-        <!-- <img class= "landingimg" src="IMAGES/LandingImage1.png" /> -->
-        <img src="IMAGES/duplexlogowhite.svg" class="logowhite" />
       </div>
-      <div class="landingtextcontainer">
-
-        <div class="landingtext">
-          <h2 class="diningexperience">enjoy a diverse dining experience in the heart of the Logan Square neighborhood.
-          </h2>
-          <a href="#">explore our menus </a>
-        </div>
-      </div>
-      <!-- <div class="palmoverlay">
-        <img class="palmimg" src="IMAGES/palm.svg" width="660" height="450">
-      </div> -->
-    </div>
 
       <!-- Food Section (Food Image + Reserve Table CTA) -->
 
-    <!-- <div class="circle2"></div> -->
-    <div class="foodcontent">
-        <img class="foodimg" src="IMAGES/duplexcocktails.jpg" />
-        <div class="foodtext">
-          <h1> Good vibes and great cocktails. It all adds up. </h1>
-          <a href="#">reserve a table</a>
-        </div>
-    </div>
+      <!-- <div class="circle2"></div> -->
+      <div class="foodcontent">
+          <img class="foodimg" src="IMAGES/duplexcocktails.jpg" />
+          <div class="foodtext">
+            <h1> Good vibes and great cocktails. It all adds up. </h1>
+            <a href="#">reserve a table</a>
+          </div>
+      </div>
 
       <!-- Events Section on Landing -->
 
@@ -147,86 +132,86 @@
 
               <!-- Photo Collage Section and Hours -->
 
-     <div class="photocontainer">
-       <img src="IMAGES/Duplexgroup.jpg" class="photo1" width="55%" height="55%">
-       <img src="IMAGES/Duplexfoodshot.jpg" class="photo2" width="40%" height="40%">
-       <img src="IMAGES/Duplexbrunch.jpg"  class="photo3" height="78%">
-       <div class="brunchtext">
+      <div class="photocontainer">
+        <img src="IMAGES/Duplexgroup.jpg" class="photo1" width="55%" height="55%">
+        <img src="IMAGES/Duplexfoodshot.jpg" class="photo2" width="40%" height="40%">
+        <img src="IMAGES/Duplexbrunch.jpg"  class="photo3" height="78%">
+        <div class="brunchtext">
          <h1> Join us for brunch on Saturday and Sunday </h1><p>
            <h2 style="color: #2B2E28"> Enjoy bottomless mimosas and margaritas. </h2>
          </div>
-       </div>
+      </div>
 
          <!-- Newsletter Sign Up Form -->
 
-         <div class="newslettercontent">
-           <div class="newslettertext">
-             <h1 style="color: #FFFDF5"> Keep up to date with The Duplex </h1>
-             <h2>Sign up below to recieve news and updates from us via our Loyalty Program.</h2>
-             <!-- Begin Mailchimp Signup Form -->
-     <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
-     <style type="text/css">
-     	#mc_embed_signup{clear:left; }
-     	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-     	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-     </style>
-     <div class="subscribesection" id="mc_embed_signup">
-     <form action="https://theduplexchicago.us1.list-manage.com/subscribe/post?u=6ac758a42226b9f47e729862b&amp;id=6429f4bc1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div class="inputcontainer" id="mc_embed_signup_scroll">
-        <input class="emailinput" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6ac758a42226b9f47e729862b_6429f4bc1e" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="Sign Up" id="mc-embedded-subscribe" class="subscribebutton"></div>
-      </div>
-     </form>
-     </div>
+      <div class="newslettercontent">
+        <div class="newslettertext">
+          <h1 style="color: #FFFDF5"> Keep up to date with The Duplex </h1>
+          <h2>Sign up below to recieve news and updates from us via our Loyalty Program.</h2>
+          <!-- Begin Mailchimp Signup Form -->
+          <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
+          <style type="text/css">
+     	    #mc_embed_signup{clear:left; }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div class="subscribesection" id="mc_embed_signup">
+            <form action="https://theduplexchicago.us1.list-manage.com/subscribe/post?u=6ac758a42226b9f47e729862b&amp;id=6429f4bc1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="inputcontainer" id="mc_embed_signup_scroll">
+                <input class="emailinput" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6ac758a42226b9f47e729862b_6429f4bc1e" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="Sign Up" id="mc-embedded-subscribe" class="subscribebutton"></div>
+              </div>
+            </form>
+          </div>
 
      <!--End mc_embed_signup-->
-           </div>
-           <div class="social-links">
+        </div>
+        <div class="social-links">
            <h2>Follow us on social media</h2>
            <li><a href="facebooklink"><i class="fa fa-facebook" aria-hidden="true" style="font-size:40px;"></i></a></li>
            <li><a href="instagramlink"><i class="fa fa-instagram" aria-hidden="true" style="font-size:40px;"></i></a></li>
            <li><a href="tiktoklink"><img src="IMAGES/tiktok.svg"></a></li>
-           </div>
-  </section>
-
-  <section class="footer">
-    <div class="footerinfo">
-        <img src="IMAGES/Duplexlogoblack.png" class="footerlogo" />
-        <div class="footertext">
-          <div class="sitemap footersection">
-            <h1>Sitemap</h1>
-            <div>Menu</div>
-            <div>Reservations</div>
-            <div>About</div>
-            <div>Order</div>
-            <div>Contact</div>
-          </div>
-          <div class="locationhours footersection">
-            <h1>Location</h1>
-            <div>3137 W Logan Blvd. Chicago, IL 60647</div>
-            <h1>Hours</h1>
-            <div>Tuesday - Sunday</div>
-            <div>10 am to 11 pm</div>
-          </div>
-          <div class="contact footersection">
-            <h1>Contact</h1>
-            <div>For general inquiries, email@email.com</div>
-            <div>For career opportunities, email your resume to email@email.com</div>
-          </div>
         </div>
       </div>
-      <div class="tenantscontainer">
-        <div class="tenants">
-          <h1>Our Tenants</h1>
-          <div>The Kluckerz</div>
-          <div>Lime and Radish</div>
-        </div>
-      </div>
-  </section>
-  <footer class="stickyfooter">
-    Reserve
-  </footer>
-</body>
+      <section class="footer">
+        <div class="footerinfo">
+            <img src="IMAGES/Duplexlogoblack.png" class="footerlogo" />
+            <div class="footertext">
+              <div class="sitemap footersection">
+                <h1>Sitemap</h1>
+                <div>Menu</div>
+                <div>Reservations</div>
+                <div>About</div>
+                <div>Order</div>
+                <div>Contact</div>
+              </div>
+              <div class="locationhours footersection">
+                <h1>Location</h1>
+                <div>3137 W Logan Blvd. Chicago, IL 60647</div>
+                <h1>Hours</h1>
+                <div>Tuesday - Sunday</div>
+                <div>10 am to 11 pm</div>
+              </div>
+              <div class="contact footersection">
+                <h1>Contact</h1>
+                <div>For general inquiries, email@email.com</div>
+                <div>For career opportunities, email your resume to email@email.com</div>
+              </div>
+            </div>
+          </div>
+          <div class="tenantscontainer">
+            <div class="tenants">
+              <h1>Our Tenants</h1>
+              <div>The Kluckerz</div>
+              <div>Lime and Radish</div>
+            </div>
+          </div>
+      </section>
+      <footer class="stickyfooter">
+        Reserve
+      </footer>
+    </div>
+  </body>
 </html>
