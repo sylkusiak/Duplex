@@ -141,7 +141,7 @@ body {
     z-index:1;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-right: 20%;
+    padding-right: 35%;
     padding-left: 5%;
 
     /* height: 500px */
@@ -157,7 +157,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    /* background-size: cover; */
+    opacity: .10;
+    background-blend-mode: color-burn;
+    background-image:  url("../IMAGES/Palm-background.png");
   }
 }
 
@@ -241,10 +243,10 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .palmoverlay {
     position: absolute;
-    left: 91px;
+    left: 250px;
     top: 480px;
     mix-blend-mode: color-burn;
     opacity: 0.12;
@@ -595,6 +597,87 @@ h1 {
   padding: 10% 25% 10% 25%;
 }
 
+@media (min-width: 768px) {
+  .inputcontainer {
+    display: flex;
+    flex-direction: horizontal;
+    background-color: transparent;
+  }
+
+  .emailinput {
+    width: 70%;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    font-family: Alegreya Sans;
+  }
+
+  .clear {
+    width: 30%;
+    outline: 1px solid #F2B277
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .inputcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  .emailinput {
+    height: 45px;
+    width: 98%;
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    font-family: Alegreya Sans;
+
+
+  }
+
+  .clear {
+    /* height: 40px; */
+    outline: 1px solid #F2B277;
+    width: 100%
+  }
+
+}
+
+.subscribesection {
+  background: transparent;
+}
+
+.subscribebutton {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 17px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-weight:400;
+  
+}
+.subscribebutton:hover{
+  background-color: #F2B277;
+  color: black;
+  outline: 1px solid black;
+}
+
+#mc_embed_signup {
+  background: transparent
+}
+
 /* Footer Section */
 
 
@@ -714,3 +797,126 @@ body {
   background-color: #2D3425;
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* footer */
+
+
+
+.footer {
+  display: flex;
+  font-family: Alegreya Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #40423F;
+}
+
+.footer h1 {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #0C1503;
+}
+
+.footertext {
+  display: flex;
+  
+}
+
+@media (min-width: 768px) {
+  .footerlogo {
+    width: 40%;
+    min-width: 350px;
+    max-width: 500px
+  }
+
+  .footerinfo {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: #F1EEE0;
+    padding: 30px
+  }
+  
+  .tenants {
+    margin-top: 25%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .tenantscontainer {
+    width: 25%
+  }
+
+  .footertext {
+    display: flex;
+
+  }
+  .footersection {  
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+}
+
+.footersection {
+  padding: 10px
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footertext {
+    flex-direction: column;
+  }
+  .tenants {
+    padding: 20px;
+    padding-left: 40px;
+    text-align: center;
+    background-color: #FFFCF0;
+  }
+
+  .footerinfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1EEE0;
+    padding: 30px;
+  }
+
+  .footerlogo {
+    width: 68%;
+    max-width: 320px;
+  }
+
+}
+
+/* sticky footer */
+
+@media (max-width: 768px) {
+  .stickyfooter {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #F2B277;
+    z-index: 4;
+    height: 50px;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 30px;
+    font-family: Alegreya Sans;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .stickyfooter {
+    display: none;
+  }
+}
+
